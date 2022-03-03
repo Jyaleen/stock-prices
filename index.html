@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css" />
+    <title>Disrupt Workshop</title>
+</head>
+<body>
+    <div class="App">
+        <div class="column">
+            <img 
+                class="logo"
+                src="https://upload.wikimedia.org/wikipedia/commons/8/8f/Yahoo%21_Finance_logo_2021.png" 
+                alt="yahoo finance logo">
+            <h1 class="title center">
+                Search for Current Stock Prices
+            </h1>
+            <input class="ticker-input" placeholder="Enter Ticker">
+            <button class="chart-button">Get Chart</button>
+        </div>
+        <div class="column" id="ticker-components-col">
+            <!-- this is where tickers will go -->
+        </div>
+    </div>
+    <template class="info-template">
+        <div class="ticker-info">
+            <h2 class="symbol">
+                Symbol
+            </h2>
+            <h3 class="currency">
+                Currency
+            </h3>
+            <p class="chartPreviousClose">
+                chartPreviousClose
+            </p>
+        </div>
+    </template>
+    <script src="script.js"></script>
+</body>
+</html>
